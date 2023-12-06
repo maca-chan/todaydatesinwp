@@ -1,5 +1,5 @@
-Plugin Name: todaysdateinwp
+**Plugin Name:** todaysdateinwp
 
-Description: Añade los shortcodes: [year], [month], [daymonth], [dayweek]
+**Description:** Añade los shortcodes: [year], [month], [daymonth], [dayweek]
 
-Author: Maca-chan
+**Author:** Maca-chan
