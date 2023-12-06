@@ -3,7 +3,6 @@
 Plugin Name: todaysdateinwp
 Description: Añade los shortcodes: [year], [month], [daymonth], [dayweek]
 Author: Maca-chan
-License: Eclipse Public License - v 2.0
 */
 
 function obtener_mes_actual() {
