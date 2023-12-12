@@ -5,6 +5,8 @@ Description: Añade los shortcodes: [year], [month], [daymonth], [dayweek]
 Author: Maca-chan
 */
 
+namespace todaysdateinwp
+
 function obtener_mes_actual() {
     $mes_actual = date('n');
     
@@ -49,16 +51,12 @@ function obtener_ano_actual() {
     return $ano_actual;
 }
 
-// Registramos el shortcode
-add_shortcode('year', 'obtener_ano_actual');
 
+function add_shortcodes() {
+    add_shortcode('year', 'todaysdateinwp\\obtener_ano_actual');
+	add_shortcode('month', 'todaysdateinwp\\obtener_mes_actual');
+    add_shortcode('daymonth', 'todaysdateinwp\\obtener_diames_actual');
+    add_shortcode('dayweek', 'todaysdateinwp\\obtener_diasemana_actual');
+}
 
-// Registramos el shortcode
-add_shortcode('month', 'obtener_mes_actual');
-
-// Registramos el shortcode
-add_shortcode('daymonth', 'obtener_diames_actual');
-
-
-// Registramos el shortcode
-add_shortcode('dayweek', 'obtener_diasemana_actual');
+add_action('init', 'add_shortcodes');
