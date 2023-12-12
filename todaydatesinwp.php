@@ -5,7 +5,7 @@ Description: Añade los shortcodes: [year], [month], [daymonth], [dayweek]
 Author: Maca-chan
 */
 
-namespace todaysdateinwp
+namespace todaysdateinwp;
 
 function obtener_mes_actual() {
     $mes_actual = date('n');
