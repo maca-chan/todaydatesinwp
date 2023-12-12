@@ -59,4 +59,4 @@ function add_shortcodes() {
     add_shortcode('dayweek', 'todaysdateinwp\\obtener_diasemana_actual');
 }
 
-add_action('init', 'add_shortcodes');
+add_action('init', 'todaysdateinwp\\add_shortcodes');
