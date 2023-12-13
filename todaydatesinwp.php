@@ -7,6 +7,9 @@ Author: Maca-chan
 
 namespace todaysdateinwp;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+
 function obtener_mes_actual() {
     $mes_actual = date('n');
     
